@@ -9,6 +9,8 @@
 
 // 5. Connect to MongDB - add connection string to .env file
 
+// 5.a Add .env file to gitignore
+
 // 6. Create Port
 
 // ---- Test Mongo and Port connection
