@@ -25,6 +25,14 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json)
 app.use(cors())
 
+// BackEnd Communicating With FrontEnd
+app.get("/", async(req, res) =>{
+    try{
+        res.render("index.ejs")
+    }catch(error){
+        res.status(500).send({message: error.message})
+    }
+} )
 
 // Setting Port To Listen
 // PORT is defined in .env
